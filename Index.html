@@ -1,1 +1,318 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#080816">
+<title>BigTortaEnergy ($BTE) | SpudVerse</title>
+<meta name="description" content="BigTortaEnergy ($BTE), ese. Straight SpudVerse. You either got it, or you don't, fool.">
+<style>
+:root {
+  --pink: #ff318e;
+  --blue: #21c8ff;
+  --gold: #ffd66b;
+  --bg: #080816;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  overflow-x: hidden;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(ellipse at 15% 20%, #162a63 0, transparent 45%),
+    radial-gradient(ellipse at 85% 45%, #58153e 0, transparent 42%),
+    linear-gradient(160deg, #080816, #111024 65%, #080816);
+}
+a { color: inherit; }
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+  border-bottom: 1px solid #ffffff20;
+}
+.logo {
+  font-weight: 1000;
+  color: var(--gold);
+  letter-spacing: 2px;
+  font-size: 19px;
+  text-shadow: 2px 2px var(--pink);
+}
+header a {
+  text-decoration: none;
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.hero { padding: 58px 20px 30px; }
+.tag {
+  display: inline-block;
+  border: 1px solid var(--pink);
+  color: var(--pink);
+  padding: 9px 14px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+h1 {
+  margin: 22px 0 10px;
+  font-size: clamp(42px, 11vw, 82px);
+  line-height: .92;
+  font-weight: 1000;
+  letter-spacing: -3px;
+  text-transform: uppercase;
+  text-shadow: 4px 4px 0 #a61b62, 7px 7px 0 #101020;
+}
+h1 span { color: var(--pink); }
+.subtitle {
+  color: var(--gold);
+  font-weight: 900;
+  letter-spacing: 5px;
+  font-size: 18px;
+}
+.art {
+  width: min(86%, 390px);
+  min-height: 270px;
+  margin: 28px auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  border: 2px solid var(--blue);
+  border-radius: 48% 48% 12px 12px;
+  background: radial-gradient(ellipse, #37205c, #101024 70%);
+  box-shadow: 0 0 24px #21c8ff30, 8px 8px 0 #ff318e;
+  overflow: hidden;
+}
+.art img {
+  display: block;
+  width: 100%;
+  max-height: 490px;
+  object-fit: contain;
+}
+.art-placeholder {
+  display: none;
+  padding: 35px 15px;
+  color: var(--gold);
+  font-size: 34px;
+  line-height: 1.1;
+  font-weight: 1000;
+  text-shadow: 3px 3px var(--pink);
+}
+.art-placeholder small {
+  display: block;
+  color: var(--blue);
+  font-size: 12px;
+  margin-top: 18px;
+  letter-spacing: 2px;
+}
+.intro {
+  max-width: 560px;
+  margin: 25px auto;
+  line-height: 1.8;
+  color: #e2dfed;
+  font-size: 16px;
+}
+.intro strong { color: var(--pink); }
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 25px auto 38px;
+  padding: 0 12px;
+}
+.btn {
+  display: inline-block;
+  padding: 16px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 1000;
+  letter-spacing: 1px;
+  border: 2px solid var(--pink);
+  background: var(--pink);
+  color: #fff;
+  cursor: pointer;
+}
+.btn.secondary {
+  background: transparent;
+  border-color: var(--blue);
+  color: var(--blue);
+}
+.btn:hover { filter: brightness(1.2); }
+section {
+  padding: 48px 20px;
+  border-top: 1px solid #ffffff18;
+}
+h2 {
+  color: var(--gold);
+  font-size: 29px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px #a61b62;
+}
+.card {
+  max-width: 560px;
+  margin: 25px auto;
+  padding: 25px 18px;
+  border: 1px solid #ffffff25;
+  border-radius: 12px;
+  background: #ffffff08;
+}
+.card p { line-height: 1.8; color: #ddd8eb; }
+.address {
+  overflow-wrap: anywhere;
+  color: var(--blue);
+  font-size: 12px;
+  line-height: 1.8;
+  margin: 18px 0;
+}
+footer {
+  padding: 32px 20px;
+  color: #a6a3bb;
+  font-size: 12px;
+  line-height: 1.8;
+}
+footer a { color: var(--pink); }
+.disclaimer {
+  max-width: 650px;
+  margin: 12px auto;
+  font-size: 10px;
+  color: #77758e;
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">BTE ★</div>
+  <a href="#token">THE TOKEN, FOOL ↓</a>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="tag">A SPUDVERSE ORIGINAL</div>
+    <h1>BIG TORTA<br><span>ENERGY</span></h1>
+    <div class="subtitle">$BTE • NO TEACHER'S PETS</div>
+
+    <div class="art">
+      <img src="big-torta.png" alt="BigTortaEnergy character"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='grid';">
+      <div class="art-placeholder">
+        BIG TORTA<br>ENERGY 💋
+        <small>ARTWORK LOADING, ESE...</small>
+      </div>
+    </div>
+
+    <div class="intro">
+      Ese, you already know what's up.<br>
+      Straight <strong>SpudVerse</strong>, fool.<br>
+      We got the hoops, the brows, the attitude,
+      and the kind of energy your girl told you
+      not to worry about.<br><br>
+      This ain't your regular crypto shit, ese.
+      This is <strong>BIG TORTA ENERGY.</strong><br>
+      You either got it, or you don't, foo.
+    </div>
+
+    <div class="buttons">
+      <a class="btn" href="https://kasparocket.fun/token/efcf006e57f67e6f0ac90709647bdb5700295a48a3c6b3e7d30b2b724a7b0f1d" target="_blank" rel="noopener">GET $BTE ↗</a>
+      <a class="btn secondary" href="#token">TOKEN INFO</a>
+    </div>
+  </div>
+
+  <section>
+    <h2>THE ENERGY IS DIFFERENT</h2>
+    <div class="card">
+      <p>
+        <strong style="color:#ff318e">Big hoops.</strong><br>
+        <strong style="color:#21c8ff">Bigger attitude.</strong><br>
+        <strong style="color:#ffd66b">TORTA-LEVEL CONFIDENCE.</strong>
+      </p>
+      <p>
+        One narrative. One whole lotta energy.
+        Born in the SpudVerse, fool.
+      </p>
+    </div>
+  </section>
+
+  <section id="token">
+    <h2>THE TOKEN, ESE</h2>
+    <div class="card">
+      <p>BIGTORTAENERGY</p>
+      <h2 style="color:#ff318e">$BTE</h2>
+      <p>Network: Kaspa ecosystem / KCC20</p>
+      <div class="address" id="contract">
+        efcf006e57f67e6f0ac90709647bdb5700295a48a3c6b3e7d30b2b724a7b0f1d
+      </div>
+      <button class="btn secondary" onclick="copyAddress()">COPY TOKEN ADDRESS</button>
+      <p id="copy-status" aria-live="polite"></p>
+      <a class="btn" href="https://kasparocket.fun/token/efcf006e57f67e6f0ac90709647bdb5700295a48a3c6b3e7d30b2b724a7b0f1d" target="_blank" rel="noopener">VIEW TOKEN ↗</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>REPRESENT THE SPUDVERSE</h2>
+    <p class="intro">
+      BTE is its own narrative in the SpudVerse ecosystem.
+      Different flavor, same universe, fool.
+    </p>
+    <a class="btn secondary" href="https://github.com/SPUDVERSE/Website" target="_blank" rel="noopener">SPUDVERSE HQ ↗</a>
+  </section>
+</main>
+
+<footer>
+  <div class="logo">BIG TORTA ENERGY ★</div>
+  <p>All attitude. No apologies, ese.</p>
+  <div class="disclaimer">
+    $BTE is a meme-token narrative. This website is for
+    entertainment and informational purposes only, not financial
+    advice or a promise of returns. Verify token details before
+    making any transaction.
+  </div>
+  <p>© 2026 BigTortaEnergy • SpudVerse ecosystem</p>
+</footer>
+
+<script>
+function copyAddress() {
+  const address = document.getElementById('contract').innerText.trim();
+  const status = document.getElementById('copy-status');
+  if (navigator.clipboard && window.isSecureContext) {
+    navigator.clipboard.writeText(address).then(() => {
+      status.textContent = 'Copied, ese! 💋';
+    }).catch(() => fallbackCopy(address, status));
+  } else {
+    fallbackCopy(address, status);
+  }
+}
+function fallbackCopy(address, status) {
+  const field = document.createElement('textarea');
+  field.value = address;
+  field.style.position = 'fixed';
+  field.style.opacity = '0';
+  document.body.appendChild(field);
+  field.select();
+  try {
+    document.execCommand('copy');
+    status.textContent = 'Copied, ese! 💋';
+  } catch (e) {
+    status.textContent = 'Press and hold the address above to copy it.';
+  }
+  field.remove();
+}
+</script>
+</body>
+  </html>
+  
